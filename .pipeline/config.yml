@@ -7,6 +7,9 @@
 #
 # This is a YAML-file. YAML is an indentation-sensitive file format. Please make sure to properly indent changes to it.
 ###
+
+
+
 ### General project setup
 ---
  general:
@@ -25,11 +28,11 @@
     steps:
       cloudFoundryDeploy:
         cloudFoundry: 
-          apiEndpoint: "https://api.cf.us10.hana.ondemand.com/"
+          apiEndpoint: "https://api.cf.us10.hana.ondemand.com"
           org: "8f6c8e98trial_trail-acagsxup"
           space: "cf-space"
           credentialsId: "cfdeploy" # set this to 'cfdeploy'
           appName: ""
         mtaDeployParameters: "-f --version-rule ALL"
-    artifactPrepareVersion:
+      artifactPrepareVersion:
         versioningType: "cloud_noTag"
